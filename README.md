@@ -1,5 +1,5 @@
 - 👋 Hi, my name is Matheus Borges
-- 👀 I’m interested in Machine learning
+- 👀 I’m interested...
 - 🌱 I’m currently learning Python
-- 💞️ I’m looking to collaborate on open source projects involving python
+- 💞️ I’m looking to collaborate on...
 - 📫 How to reach me: My email is matheusgbb@icloud.com
