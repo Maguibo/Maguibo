@@ -1,0 +1,86 @@
+import logging
+import random
+
+
+def pula_linha():
+    print("**************************************************")
+
+
+pula_linha()
+print('Bem vindo ao jogo de Roletta Russa')
+pula_linha()
+
+
+print("Qual nivel de dificuldade?")
+print("(1) Fácil (2) Médio (3) Difícil")
+
+
+nivel = int(input("Defina o nível: "))
+total_tentativas = 0
+if nivel == 1:
+    total_tentativas = 1
+elif nivel == 2:
+    total_tentativas = 3
+elif nivel == 3:
+    total_tentativas = 5
+
+
+def roleta():
+    print('Puxar o garilho ou rolar o tambor?\n')
+
+
+tiro = random.randrange(1, 6)
+tambor = random.randrange(1, 6)
+rodada = 1
+while rodada <= total_tentativas:
+
+   
+    escolhas = int(input("Aperte (1) para puxar o gatilho ou (2) para rolar o tambor\n"))
+   
+    if escolhas == 1:
+        tiro = tiro + 1
+        if tiro == 7:
+            tiro = 1
+        print("Valor do tiro: {}".format(tiro))
+        rodada = rodada + 1
+        if tambor == tiro:
+            print("Voce morreu!")
+            print("    _______________         ")
+            print("   /               \       ")
+            print("  /                 \      ")
+            print("//                   \/\  ")
+            print("\|   XXXX     XXXX   | /   ")
+            print(" |   XXXX     XXXX   |/     ")
+            print(" |   XXX       XXX   |      ")
+            print(" |                   |      ")
+            print(" \__      XXX      __/     ")
+            print("   |\     XXX     /|       ")
+            print("   | |           | |        ")
+            print("   | I I I I I I I |        ")
+            print("   |  I I I I I I  |        ")
+            print("   \_             _/       ")
+            print("     \_         _/         ")
+            print("       \_______/           ")
+            break
+
+        else:
+            print("Parabens, voce sobreviveu\n")
+            print("       ___________      ")
+            print("      '._==_==_=_.'     ")
+            print("      .-\\:      /-.    ")
+            print("     | (|:.     |) |    ")
+            print("      '-|:.     |-'     ")
+            print("        \\::.    /      ")
+            print("         '::. .'        ")
+            print("           ) (          ")
+            print("         _.' '._        ")
+            print("        '-------'       ")
+
+
+    else:
+        print("Voce rolou o tambor!\n")
+
+        tambor = random.randrange(1, 6)
+
+
+
