@@ -1,5 +1,5 @@
 - 👋 Hi, my name is Matheus Borges
 - 👀 I’m interested...
-- 🌱 I’m currently learning Python
+- 🌱 I’m currently learning HTML and CSS
 - 💞️ I’m looking to collaborate on...
 - 📫 How to reach me: My email is matheusgbb@icloud.com
